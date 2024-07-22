@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://DnyaneshKamthe.github.io/blogPosts/",
+  "homepage": "https://dnyaneshkamthe.github.io/blogPosts/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
