@@ -12,7 +12,7 @@ export const PostsProvider = ({ children }) => {
     const fetchPosts = async () => {
       try {
         const response = await axios.get(
-          `https://newsapi.org/v2/everything?q=tesla&from=2024-06-18&sortBy=publishedAt&apiKey=8a5e11189f07475da24084b2123e40f2`
+          `https://newsapi.org/v2/top-headlines?country=in&apiKey=8a5e11189f07475da24084b2123e40f2`
         );
         setPosts(response.data.articles);
         setTotalResults(response.data.totalResults);
