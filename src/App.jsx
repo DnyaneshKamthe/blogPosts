@@ -4,6 +4,7 @@ import BlogPostList from './components/BlogPostList';
 import BlogPostDetails from './components/BlogPostDetails';
 import { PostsProvider } from './components/context/PostsContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import PageNotFound from './components/PageNotFound';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<BlogPostList />} />
             <Route path="/post/:id" element={<BlogPostDetails />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>
       </Router>
