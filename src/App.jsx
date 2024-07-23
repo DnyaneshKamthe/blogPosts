@@ -11,7 +11,7 @@ const App = () => {
     <PostsProvider>
       <Router>
         <div className="App">
-          <Routes>
+          <Routes basename={`/blogPosts/`}>
             <Route path="/" element={<BlogPostList />} />
             <Route path="/post/:id" element={<BlogPostDetails />} />
             <Route path="*" element={<PageNotFound />} />
